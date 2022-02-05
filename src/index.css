@@ -8,17 +8,30 @@ body{
 }
 
 input{
-  background-color: #ffe6c5;
+  background-color: #ffe7c7;
   border: none;
   border-bottom: solid 3px #99774a;
   border-radius: 3px;
   color: #000;
+  font-family: "Anton", sans-serif;
   font-size: 1.2rem;
+  padding: 5px 0;
+  text-shadow: -5px 3px 0 #02102e3a;
+  text-transform: uppercase;
+  text-align: center;
   outline: none;
   width: 100%;
 }
 input::placeholder{
-  color: #777;
+  color: #02102e9a;
+  font-weight: 800;
+
+}
+h1{
+  color: #02102e;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 30px;
 }
 h3{
   color: #555;
@@ -30,7 +43,7 @@ h3::first-letter{
 }
 hr{
   height: 3px;
-  background-color: #000;
+  background-color: #02102e;
 }
 .gift-container{
   background-color: #ffe6c5;
@@ -38,11 +51,10 @@ hr{
   margin: auto;
   margin-bottom: 20px;
   height: 85vh;
-  overflow: hidden;
   padding: 7px;
   padding-bottom: 75px;
   width: 90%;
-  box-shadow: -10px 7px 10px #000;
+  box-shadow: -10px 7px 10px #ffe6c593;
 }
 .gift-container h3{
   margin-bottom: 5px;
@@ -53,34 +65,50 @@ hr{
   margin: 15px;
 }
 .gift-list{
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+  overflow-x: visible;
   height: 100%;
   width: 100%;
 }
 .gift-list::-webkit-scrollbar {display: none;}
 
 .gift-item{
-  background-color: #ff8484;
+  display: inline-block;
+  position: relative;
+  background-color: #ffbdbd;
   border-radius: 5px;
-  margin-right: 5px;
+  margin-right: 15px;
   margin-bottom: 10px;
   height: max-content;
   width: min-content;
-  box-shadow: -5px 8px 10px rgb(177, 142, 142);
+  box-shadow: -8px 10px 15px rgb(165, 165, 165);
+  z-index: 50;
+}
+.gift-item:hover{
+  z-index: 100;
+  background-color: #ff8484;
+
 }
 
 .gift-item p{
+  font-family: 'Anton', sans-serif;
   background-color: #ffa7a7;
-  border: 1px solid #333;
+  box-shadow: -15px 5px 5px #997272ad;
   border-radius: 5px;
-  margin: 5px 5px;
-  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 70%;
   text-transform: uppercase;
-
+}
+.gift-item p:hover{
+  color: #dbb061;
+  background-color: #de1f11;
+  cursor: pointer;
 }
 .gift-item p::first-letter{
   text-transform: uppercase;
@@ -88,20 +116,29 @@ hr{
 
 .gift-img{
   margin: 6px;
-  width: max-content;
-  height: max-content;
-  transform: scale(1) translateY(0);
-  transition: all .2s;
+  width: 100%;
+  height: 100%;
 }
 
 .gift-img img{
-  height: max-content;
-  width: max-content;
+  height: 250px;
   object-fit: contain;
+  transition: all .8s;
+}
+.gift-img img:hover{
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 0 20px #de1f11;
+  border-radius: 8px;
 }
 
 
-/* ///////////////////////////MEDIA QUERIS */
+.delay-1{
+  animation-delay: 1s;
+}
+
+  
+  
+  /* ///////////////////////////MEDIA QUERIS */
 @media only screen and (max-width: 800px){
   body{
     padding: 0;

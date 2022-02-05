@@ -8,7 +8,7 @@ export const GiftGrid = ( {category} ) => {
 
   return (
       <>
-        <div className='gift-container animate__animated animate__jello'>
+        <div className='gift-container animate__animated animate__jello animate__delay-2s'>
             <h3>{category}</h3>
             <p className='animate__animated animate__pulse animate__infinite'>{loading && 'Loading...'}</p>
             <div className='gift-list animate__animated '>

@@ -13,10 +13,10 @@ export const useFetchGifts = (category) => {
         getGifs(category).then((gifs)=>
             setTimeout(() => {
                 setState({
-                    data:gifs,
-                    loading:false
+                    data: gifs,
+                    loading: false
                 })
-            }, 3000))
+            }, 1950))
     }, [ category ])
 
     return state;

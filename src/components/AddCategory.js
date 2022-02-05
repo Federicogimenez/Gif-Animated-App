@@ -23,6 +23,7 @@ export const AddCategory = ({setCategories}) => {
             type="text"
             value={inputValue}
             onChange={handleValue}
+            className='animate__animated animate__flipInY'
         />
       </form>
     );
