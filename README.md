@@ -1,6 +1,6 @@
-# Welcome to my first app. It was created for lookin for animated gifts
+# Welcome to my first app. It look for animated gifts!!
 
-Getting Started with Create React App
+This App was created to practice with `hooks` in React 
 
 This project was bootstrapped with Create React App and served by Giphy API
 
