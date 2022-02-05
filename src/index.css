@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-size: 20px;
+  font-family:  Helvetica, Arial, sans-serif;
+}
+body{
+  padding: 60px;
+  background-color: #ffb759;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+  background-color: #ffe6c5;
+  border: none;
+  border-bottom: solid 3px #99774a;
+  border-radius: 3px;
+  color: #000;
+  font-size: 1.2rem;
+  outline: none;
+  width: 100%;
+}
+input::placeholder{
+  color: #777;
+}
+h3{
+  color: #555;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+h3::first-letter{
+  text-transform: uppercase;
+}
+hr{
+  height: 3px;
+  background-color: #000;
+}
+.gift-container{
+  background-color: #ffe6c5;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 85vh;
+  overflow: hidden;
+  padding: 7px;
+  padding-bottom: 75px;
+  width: 90%;
+  box-shadow: -10px 7px 10px #000;
+}
+.gift-container h3{
+  margin-bottom: 5px;
+  margin-left: 35px;
+}
+.gift-container p{
+  text-align: center;
+  margin: 15px;
+}
+.gift-list{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.gift-list::-webkit-scrollbar {display: none;}
+
+.gift-item{
+  background-color: #ff8484;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  height: max-content;
+  width: min-content;
+  box-shadow: -5px 8px 10px rgb(177, 142, 142);
+}
+
+.gift-item p{
+  background-color: #ffa7a7;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 5px 5px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.gift-item p::first-letter{
+  text-transform: uppercase;
+}
+
+.gift-img{
+  margin: 6px;
+  width: max-content;
+  height: max-content;
+  transform: scale(1) translateY(0);
+  transition: all .2s;
+}
+
+.gift-img img{
+  height: max-content;
+  width: max-content;
+  object-fit: contain;
+}
+
+
+/* ///////////////////////////MEDIA QUERIS */
+@media only screen and (max-width: 800px){
+  body{
+    padding: 0;
+  }
+  *{font-size: 12px;}
+  .gift-item{
+    width: 100%;
+  }
+  .gift-img{
+    width: 97%;
+  }
+  .gift-img img{
+    width: 100%;
+  }
 }
