@@ -1,4 +1,4 @@
-Welcome to my first app. It was created for lookin for animated gifts
+# Welcome to my first app. It was created for lookin for animated gifts
 
 Getting Started with Create React App
 
