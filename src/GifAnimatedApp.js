@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GiftGrid } from './components/GiftGrid';
 
-export const GiftExpertApp = () => {
+export const GifAnimatedApp = () => {
 
     const [categories, setCategories] = useState(["Lionel Messi", "Michael Jordan"]);
   
