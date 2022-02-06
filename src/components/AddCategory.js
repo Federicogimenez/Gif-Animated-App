@@ -19,7 +19,7 @@ export const AddCategory = ({setCategories}) => {
   return (
       <form onSubmit={handleSubmit}>
           <input 
-            placeholder='Busque aqui sus gifts'
+            placeholder='Busque aqui sus gifs'
             type="text"
             value={inputValue}
             onChange={handleValue}
